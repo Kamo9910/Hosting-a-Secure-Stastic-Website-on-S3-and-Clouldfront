@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hosting a Secure Stastic Website</title>
+</head>
+<body>
+        <div class="centered-text">
+
+        <h1>Hosting Stastic Website on Amazon S3 and Amazon CloudFront </h1>
+        
+        <img class="myImage" src="1_j8MoU2Jjo19MxhIzEMMk8A.jpg" alt="Hosting a Secure Stastic Website" style="transition: transform 0.3s ease;" height="50%" width="50%">
+        
+        <h2>Project Overview:</h2>
+        <p>A personal static website hosted on Amazon S3 for storage and static site hosting. Amazon CloudFront for secure, fast content delivery via CDN</p>
+        <h3>Steps taken to complets this project :</h3>
+            <h4>1. Create and Configure S3 bucket</h4>
+            <br>
+            <img class="myImage" src="Screenshot (2).png" alt="Amazon S3" style="transition: transform 0.3s ease;" height="50%" width="50%">
+             <br>
+            <img class="myImage" src="Screenshot (1).png" alt="Amazon S3" style="transition: transform 0.3s ease;" height="50%" width="50%">
+            <br>
+            <img class="myImage" src="Screenshot (9).png" alt="Amazon S3" style="transition: transform 0.3s ease;" height="50%" width="50%">
+            <br>
+            <p>- Go to Amazon S3 → Create a bucket. <br>
+               - Name it exactly as your bucket. <br>
+               - Disable Block all public access. <br>
+               - Enable Static website hosting → Set index.html as the entry point. <br>
+               - Upload your site files. <br>
+               - Add a Bucket Policy to allow public read access:</p>
+            <br>
+            <h4>2. Create a CloudFront Distribution </h4>
+            <br>
+            <img class="myImage" src="Screenshot (3).png" alt="Amazon CloudFront" style="transition: transform 0.3s ease;" height="50%" width="50%">
+            <br>
+            <img class="myImage" src="Screenshot (4).png" alt="Amazon CloudFront" style="transition: transform 0.3s ease;" height="50%" width="50%">
+            <br>
+            <img class="myImage" src="Screenshot (6).png" alt="Amazon CloudFront" style="transition: transform 0.3s ease;" height="50%" width="50%">
+            <br>
+            <img class="myImage" src="Screenshot (8).png" alt="Amazon CloudFront" style="transition: transform 0.3s ease;" height="50%" width="50%">
+            <br>
+            <p>- Origin: S3 bucket’s website endpoint <br>
+               - Viewer Protocol Policy: Redirect HTTP to HTTPS <br>
+               - Default root object: index.html <br>
+               - Enable compression and caching <br>
+               - Use CloudFront’s default domain (e.g., d1234.cloudfront.net)</p>
+            <br>
+            <h4>3. Test Live website</h4>
+            <br>
+            <img class="myImage" src="Screenshot (10).png" alt="Live Website" style="transition: transform 0.3s ease;" height="50%" width="50%">
+           <br>
+            <p>- Visit the CloudFront domain in your browser <br>
+               Confirm: <br>
+               - Site loads correctly <br>
+               - HTTPS is active <br>
+               - Assets (CSS, images) are served properly</p>
+            
+               <button class="bt"><a class="fk" href="https://djuwx6s7lhyxv.cloudfront.net/">Portfolio</a></button>
+            </div>
+
+        <script src="javascript.js" charset="utf-8" ></script>
+
+</body>
+</html>
