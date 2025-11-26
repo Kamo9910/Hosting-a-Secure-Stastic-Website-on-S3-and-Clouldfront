@@ -26,10 +26,9 @@
             <br>
             <p>- Go to Amazon S3 → Create a bucket. <br>
                - Name it exactly as your bucket. <br>
-               - Disable Block all public access. <br>
-               - Enable Static website hosting → Set index.html as the entry point. <br>
+               - Enable Block all public access. <br>
                - Upload your site files. <br>
-               - Add a Bucket Policy to allow public read access:</p>
+               - Add a Bucket Policy to allow Origin Access so only Cloudfront can read from Amazon S3</p>
             <br>
             <h4>2. Create a CloudFront Distribution </h4>
             <br>
@@ -57,7 +56,7 @@
                - HTTPS is active <br>
                - Assets (CSS, images) are served properly</p>
             
-               <a class="fk" href="https://djuwx6s7lhyxv.cloudfront.net/"><button class="bt">Portfolio</button></a>
+               <a class="fk" href="d2awxokoqrcu54.cloudfront.net"><button class="bt">Portfolio</button></a>
             </div>
 
         <script src="javascript.js" charset="utf-8" ></script>
@@ -65,3 +64,4 @@
 </body>
 
 </html>
+
